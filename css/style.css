@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #24353F;
+    position: relative;
+}
+
+:root {
+    --main-font: "Titillium Web", sans-serif;
+}
+
+
+/*** sign in section ****************************/
+.signInSec {
+    background-color: #24353F;
+    height: 400px;
+    box-shadow: 0px 0px 30px black;
+}
+
+.title {
+    color: #17A2B8;
+    font-family: var(--main-font);
+}
+
+.form-control::placeholder {
+    color: #A8B6B6;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#loginBtn {
+    border: 1px solid #17A2B8;
+    transition: all .2s ease-in;
+    font-family: var(--main-font);
+    color: #17A2B8;
+}
+
+#loginBtn:hover {
+    background-color: #17A2B8;
+    color: white;
+}
+
+.signInSec p {
+    font-family: var(--main-font);
+}
+
+.signInSec a {
+    text-decoration: none;
+}
+
+.signInSec p:hover a {
+    text-decoration: underline;
+}
+
+/*********** sign in section ***************/
+/*********** sign up section ***************/
+.signUpSec {
+    background-color: #24353F;
+    height: 500px;
+    box-shadow: 0px 0px 30px black;
+    ;
+}
+
+.signUpSec .title {
+    font-family: var(--main-font);
+}
+
+.signUpSec #signUpBtn {
+    border: 1px solid #17A2B8;
+    transition: all .2s ease-in;
+    font-family: var(--main-font);
+    color: #17A2B8;
+}
+
+.signUpBtn:hover {
+    background-color: #17A2B8;
+    color: white;
+}
+
+.signUpSec p {
+    font-family: var(--main-font);
+}
+
+.signUpSec a {
+    text-decoration: none;
+}
+
+.signUpSec p:hover a {
+    text-decoration: underline;
+}
+
+
+
+#home {
+    min-height: 100vh;
+}
+
+#home nav {
+    box-shadow: 0px 0px 30px black;
+}
+
+.contentBox {
+    background-color: #24353F;
+    box-shadow: 0px 0px 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #17A2B8;
+    height: 150px;
+}
+
+#goToSignin,
+#goToSignup {
+    position: relative;
+    cursor: pointer;
+}
+
+#goToSignup::after,
+#goToSignin::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: all .2s ease-in;
+}
+
+#goToSignup:hover::after,
+#goToSignin:hover::after {
+    width: 100%;
+}
